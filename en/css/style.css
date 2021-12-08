@@ -14,7 +14,7 @@ a{
 section{
     width: 100%;
     height: 95vh;
-    background-image: url("/images/bg.jpeg");
+    background-image: url("/en/img/bg.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -149,3 +149,19 @@ button:active{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #262525;
 }
+
+.services {
+    height: 600px;
+    background-color: #FFFFFF;
+}
+.services-text p:nth-child(1){
+    font-family: calibri;
+    font-weight: bold;
+    color: #3e3d3d;
+    font-size: 15px;
+    line-height: 0px;
+}
+.services-text p:nth-child(2){
+    
+}
+.services-text p:nth-child(3){}
