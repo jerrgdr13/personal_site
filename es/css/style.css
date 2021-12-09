@@ -4,6 +4,7 @@ body{
     background-color: #f6f5f5;
     margin: 0px;
     padding: 0px;
+    flex-wrap: wrap;
 }
 ul{
     list-style: none;
@@ -14,7 +15,7 @@ a{
 section{
     width: 100%;
     height: 95vh;
-    background-image: url("/images/bg.jpeg");
+    background-image: url("/img/bg.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -43,10 +44,11 @@ nav ul li a{
     font-family: 'Times New Roman', Times, serif;
     color: #000000;
     font-size: 22px;
+    width: 150px;
 }
-.active{
+.active ul li a{
     font-weight: bold;
-    color: #2d2a2a;
+    color: #0099cc;
 }
 .text-container p:nth-child(1){
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -120,14 +122,14 @@ button:active{
 }
 
 .about-text p:nth-child(1){
-    color: #403e3e;
+    color: grey;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 23px;
     line-height: 0px;
 }
 .about-text p:nth-child(2){
-    color: #3e3d3d;
+    color: #ff9933;
     font-size: 13px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
@@ -135,7 +137,7 @@ button:active{
 }
 .about-text p:nth-child(3),
 .about-text p:nth-child(4){
-    color: #7e7d7d;
+    color: #0099cc;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
 }
@@ -149,3 +151,177 @@ button:active{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #262525;
 }
+
+.hobbies {
+    height: 600px;
+    background-color: #FFFFFF;
+    padding: 2% 10% 0px 10%;
+}
+.hobbies-text p:nth-child(1){
+    font-family: calibri;
+    font-weight: bold;
+    color: #3e3d3d;
+    font-size: 15px;
+    line-height: 0px;
+}
+.hobbies-text p:nth-child(2){
+    font-family: calibri;
+    font-weight: bold;
+    color: #3e3e3d;
+    font-size: 15px;
+    line-height: 5px;
+}
+.hobbies-text p:nth-child(3){
+    font-family: calibri;
+    color: #7e7d7d;
+}
+.hobbies-text {
+    width: 500px;
+    margin: 50px 0px;
+}
+.box-1, .box-2, .box-3 {
+    width: 300px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-container {
+    display: flex;
+    justify-content: space-between;
+}
+.box-1{
+    background-image: url(/img/hobbie-1.jpeg);
+}
+.box-2{
+    background-image: url(/img/hobbie-2.jpeg);
+}
+.box-3{
+    background-image: url(/img/hobbie-3.jpeg);
+}
+
+.box-1 span,
+.box-2 span,
+.box-3 span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    font-family: calibri;
+    font-weight: bold;
+    color: #0099cc;
+}
+.box-1 p:nth-child(2),
+.box-2 p:nth-child(2),
+.box-3 p:nth-child(2){
+    color: #0099cc;
+    font-family: calibri;
+    font-size: 23px;
+    line-height: 0px;
+}
+.box-1 p:nth-child(3),
+.box-2 p:nth-child(3),
+.box-3 p:nth-child(3){
+    color: #0099cc;
+    font-family: calibri;
+    text-align: center;
+    width: 230px;
+    margin: 0px 0px 20px 0px;
+}
+.box-1 button,
+.box-2 button,
+.box-3 button{
+    width: 100px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+}
+footer{
+    font-family: calibri;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-family: calibri;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    font-weight: bold;
+    color: #191919;
+    line-height: 10px;
+}
+footer p:nth-child(2){
+    font-size: 16px;
+    color: #7e7d7d;
+    width: 600px;
+    text-align: center;
+}
+.social a i{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: #e6e3e3;
+    margin: 20px 10px;
+    border-radius: 50%;
+    color: #0099cc;
+}
+.social{
+    display: flex;
+}
+
+@media (max-width: 700px) {
+
+
+
+    .active {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+    }
+
+    .nav-main ul.nav-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .nav ul li {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .text-container {
+        margin-right: 40px;
+    }
+
+
+    .demo-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hobbies {
+        width: 80%;
+    }
+
+    .footer-links .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
